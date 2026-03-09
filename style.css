@@ -79,3 +79,61 @@ footer {
     font-size: 0.9rem;
     margin-top: 1rem;
 }
+
+/* ===== PART 4: RECENT SEARCHES ===== */
+.recent-searches {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.recent-searches h3 {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.recent-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.recent-btn {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+}
+
+.recent-btn:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+#clear-history-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0.25rem 0;
+}
+
+#clear-history-btn:hover {
+    color: #c33;
+}
+
+/* Adjust utility class */
+.hidden {
+    display: none;
+}

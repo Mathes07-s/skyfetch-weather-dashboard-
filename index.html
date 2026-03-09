@@ -14,23 +14,45 @@
         <h1>☁️ SkyFetch</h1>
         <p class="subtitle">Your personal weather companion</p>
 
-        <!-- Weather Display -->
+        <!-- Search Section -->
+        <div class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name..." value="London">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- NEW: Recent Searches -->
+        <div id="recent-searches-container" class="recent-searches hidden">
+            <h3>Recent Searches</h3>
+            <div id="recent-searches" class="recent-buttons"></div>
+            <button id="clear-history-btn" class="clear-btn">Clear History</button>
+        </div>
+
+        <!-- Weather Card -->
         <div class="weather-card">
             <h2 id="city">London</h2>
-            <div class="weather-main">
-                <img id="weather-icon" src="" alt="Weather icon">
-                <div class="temp-container">
-                    <span id="temperature">--</span>°C
+            <div id="loading-spinner" class="spinner hidden"></div>
+            <div id="error-message" class="error hidden"></div>
+            <div id="weather-content">
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <div class="temp-container">
+                        <span id="temperature">--</span>°C
+                    </div>
                 </div>
+                <p id="description">Enter a city to begin</p>
             </div>
-            <p id="description">Loading weather data...</p>
+        </div>
+
+        <!-- Forecast Section -->
+        <div id="forecast-section" class="forecast-section hidden">
+            <h3>5‑Day Forecast</h3>
+            <div id="forecast-container" class="forecast-container"></div>
         </div>
 
         <footer>
             <p>Data from OpenWeatherMap</p>
         </footer>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
