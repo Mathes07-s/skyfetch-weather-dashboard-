@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFetch - Weather Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Axios (for API calls) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>☁️ SkyFetch</h1>
+        <p class="subtitle">Your personal weather companion</p>
+
+        <!-- Weather Display -->
+        <div class="weather-card">
+            <h2 id="city">London</h2>
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="Weather icon">
+                <div class="temp-container">
+                    <span id="temperature">--</span>°C
+                </div>
+            </div>
+            <p id="description">Loading weather data...</p>
+        </div>
+
+        <footer>
+            <p>Data from OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
